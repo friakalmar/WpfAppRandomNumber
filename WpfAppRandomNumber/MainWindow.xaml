@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfAppRandomNumber.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppRandomNumber"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="147*"/>
+            <ColumnDefinition Width="53*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TxtNrFrom" TextWrapping="Wrap" Width="120" Margin="146,173,322,230" FontSize="16"/>
+        <Label Content="Nr från" HorizontalAlignment="Left" Margin="145,147,0,0" VerticalAlignment="Top" Height="23" Width="105"/>
+        <TextBox x:Name="TxtNrTo" TextWrapping="Wrap" Width="120" Margin="292,173,176,230" FontSize="16"/>
+        <Label Content="Nr till" HorizontalAlignment="Left" Margin="295,147,0,0" VerticalAlignment="Top" Height="23" Width="105"/>
+        <TextBox x:Name="TxtNrOfNumbers" TextWrapping="Wrap" Width="120" Margin="439,173,29,230" FontSize="16"/>
+        <Label Content="Antal" HorizontalAlignment="Left" Margin="438,147,0,0" VerticalAlignment="Top" Height="23" Width="105"/>
+        <Button x:Name="BtnGetNumbers" Content="Slumpa nummer" HorizontalAlignment="Left" Height="31" Margin="233,241,0,0" VerticalAlignment="Top" Width="238" FontSize="16" Click="BtnGetNumbers_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="32" Margin="145,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="461" Background="#FFF6F6F6" TextAlignment="Center" Grid.ColumnSpan="2"/>
+        <Label Content="Resultat" HorizontalAlignment="Left" Margin="146,294,0,0" VerticalAlignment="Top" Width="120" FontSize="16" Height="30"/>
+
+    </Grid>
+</Window>
