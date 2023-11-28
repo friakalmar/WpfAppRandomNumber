@@ -5,21 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppRandomNumber"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="147*"/>
-            <ColumnDefinition Width="53*"/>
-        </Grid.ColumnDefinitions>
-        <TextBox x:Name="TxtNrFrom" TextWrapping="Wrap" Width="120" Margin="146,173,322,230" FontSize="16"/>
-        <Label Content="Nr från" HorizontalAlignment="Left" Margin="145,147,0,0" VerticalAlignment="Top" Height="23" Width="105"/>
-        <TextBox x:Name="TxtNrTo" TextWrapping="Wrap" Width="120" Margin="292,173,176,230" FontSize="16"/>
-        <Label Content="Nr till" HorizontalAlignment="Left" Margin="295,147,0,0" VerticalAlignment="Top" Height="23" Width="105"/>
-        <TextBox x:Name="TxtNrOfNumbers" TextWrapping="Wrap" Width="120" Margin="439,173,29,230" FontSize="16"/>
-        <Label Content="Antal" HorizontalAlignment="Left" Margin="438,147,0,0" VerticalAlignment="Top" Height="23" Width="105"/>
-        <Button x:Name="BtnGetNumbers" Content="Slumpa nummer" HorizontalAlignment="Left" Height="31" Margin="233,241,0,0" VerticalAlignment="Top" Width="238" FontSize="16" Click="BtnGetNumbers_Click"/>
-        <TextBlock HorizontalAlignment="Left" Height="32" Margin="145,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="461" Background="#FFF6F6F6" TextAlignment="Center" Grid.ColumnSpan="2"/>
-        <Label Content="Resultat" HorizontalAlignment="Left" Margin="146,294,0,0" VerticalAlignment="Top" Width="120" FontSize="16" Height="30"/>
+        Title="MainWindow" Height="387" Width="670">
+    <Canvas>
+        <TextBox x:Name="TxtNrFrom" TextWrapping="Wrap" Width="120"  FontSize="16" Canvas.Left="69" Canvas.Top="106" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top"/>
+        <Label Content="Nr från" HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Width="105" Canvas.Left="70" Canvas.Top="75"/>
+        <TextBox x:Name="TxtNrTo" TextWrapping="Wrap" Width="120" FontSize="16" Canvas.Left="240" Canvas.Top="106" HorizontalAlignment="Left" VerticalAlignment="Top" Height="33"/>
+        <Label Content="Nr till" HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Width="105" Canvas.Left="240" Canvas.Top="71"/>
+        <TextBox x:Name="TxtNrOfNumbers" TextWrapping="Wrap" Width="120" FontSize="14" Canvas.Left="402" Canvas.Top="105" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35"/>
+        <Label Content="Antal" HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Width="105" Canvas.Left="402" Canvas.Top="74"/>
+        <Button x:Name="BtnGetNumbers" Content="Slumpa nummer" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="238" FontSize="16" Click="BtnGetNumbers_Click" Canvas.Left="181" Canvas.Top="165"/>
+        <TextBlock HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" VerticalAlignment="Top" Width="461" Background="#FFF6F6F6" TextAlignment="Center" Grid.ColumnSpan="2" Canvas.Left="70" Canvas.Top="252"/>
+        <Label Content="Resultat" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" FontSize="16" Height="30" Canvas.Left="69" Canvas.Top="217"/>
 
-    </Grid>
+    </Canvas>
 </Window>
